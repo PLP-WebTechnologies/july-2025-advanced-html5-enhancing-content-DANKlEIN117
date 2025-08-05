@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+    <title>Enhanced HTMl5 Page And Forms</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header, section, footer{
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2{
+            color: #333;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td{
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        fieldset{
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        legend{
+            font-weight: bold;
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"]{
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my enhanced Web Page</h1>
+        <p>This page showcases advanced HTML5 content: Lists, tables, embedded media, and a form</p>
+
+    </header>
+    <section>
+        <h2>My Favourite Activities</h2>
+        <ul>
+            <li>Reading Books</li>
+            <li>Coding Projects</li>
+            <li>Listening to Acoustic songs</li>
+            <li>Spending time with family</li>
+        </ul>
+        <h3>Steps I Follow When Coding</h3>
+        <ol>
+            <li>Understanding the problem</li>
+            <li>Plan the structure</li>
+            <li>Write clean code</li>
+            <li>Test and debug</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Weekly Study Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Hours</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML &CSS</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Python</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>DataBase</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Media Showcase</h2>
+        <h3>Favourite Song</h3>
+        <audio controls>
+            <source src="favourite.mp3" type="audio/mpeg">
+            Your browser does not support the audio element
+        </audio>
+        <h3>Learning Video</h3>
+       
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/it1rTvBcfRg" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name" required minlength="3"/>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required  autocomplete="email"/>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0712345678" required/>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Survey</legend>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value=" ">-- Select Gender --</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+
+                </select>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="10" max="100" required/>
+
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Write Your Comments Here........" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe" checked readonly/>
+                    Subscribe to newsletter (mandatory)
+                </label>
+            </fieldset>
+            <input type="submit" value="submit  Form"/>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Enhanced HTML page. Built With Passion Using HTML And CSS</p>
+    </footer>
+</body>
+</html>
